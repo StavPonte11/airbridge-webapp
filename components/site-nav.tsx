@@ -3,7 +3,8 @@
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'motion/react'
-import { Github, Menu, X, ArrowUpRight } from 'lucide-react'
+import { Menu, X, ArrowUpRight } from 'lucide-react'
+import { GithubIcon } from '@/components/ui/brand-icons'
 import { Logo } from '@/components/ui/logo'
 import { cn } from '@/lib/utils'
 
@@ -58,7 +59,7 @@ export function SiteNav() {
             href="https://github.com"
             className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
           >
-            <Github className="size-4" />
+            <GithubIcon className="size-4" />
             GitHub
           </Link>
           <Link

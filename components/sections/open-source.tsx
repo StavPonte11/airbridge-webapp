@@ -3,7 +3,8 @@
 import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import { motion, useInView } from 'motion/react'
-import { Star, GitFork, Users, MessageSquare, Github } from 'lucide-react'
+import { Star, GitFork, Users, MessageSquare } from 'lucide-react'
+import { GithubIcon } from '@/components/ui/brand-icons'
 import { SectionHeading } from '@/components/ui/reveal'
 
 const stats = [
@@ -81,7 +82,7 @@ export function OpenSource() {
             href="https://github.com"
             className="group inline-flex items-center gap-2 rounded-xl bg-foreground px-6 py-3.5 text-sm font-medium text-background transition-transform hover:scale-[1.02]"
           >
-            <Github className="size-4" />
+            <GithubIcon className="size-4" />
             Explore the repository
           </Link>
         </div>

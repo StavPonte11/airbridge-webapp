@@ -1,12 +1,13 @@
 'use client'
 
 import { motion } from 'motion/react'
-import { Github, Gitlab, Server, Cloud, Package, ShieldCheck } from 'lucide-react'
+import { Server, Cloud, Package, ShieldCheck } from 'lucide-react'
+import { GithubIcon, GitlabIcon } from '@/components/ui/brand-icons'
 import { SectionHeading, Reveal } from '@/components/ui/reveal'
 
 const ciProviders = [
-  { label: 'GitHub Actions', icon: Github },
-  { label: 'GitLab CI', icon: Gitlab },
+  { label: 'GitHub Actions', icon: GithubIcon },
+  { label: 'GitLab CI', icon: GitlabIcon },
   { label: 'Jenkins', icon: Server },
   { label: 'Azure DevOps', icon: Cloud },
 ]

@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import { Github, Twitter, MessageCircle } from 'lucide-react'
+import { MessageCircle } from 'lucide-react'
+import { GithubIcon, XIcon } from '@/components/ui/brand-icons'
 import { Logo } from '@/components/ui/logo'
 
 const columns = [
@@ -53,7 +54,7 @@ export function SiteFooter() {
               anywhere, deploy everywhere.
             </p>
             <div className="mt-2 flex items-center gap-2">
-              {[Github, Twitter, MessageCircle].map((Icon, i) => (
+              {[GithubIcon, XIcon, MessageCircle].map((Icon, i) => (
                 <Link
                   key={i}
                   href="#"

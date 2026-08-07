@@ -1,7 +1,8 @@
 'use client'
 
 import Link from 'next/link'
-import { Github, ArrowRight } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
+import { GithubIcon } from '@/components/ui/brand-icons'
 import { Reveal } from '@/components/ui/reveal'
 
 export function FinalCta() {
@@ -36,7 +37,7 @@ export function FinalCta() {
                     href="https://github.com"
                     className="inline-flex items-center gap-2 rounded-xl border border-border bg-background/40 px-6 py-3.5 text-sm font-medium backdrop-blur-md transition-colors hover:border-cyan/40"
                   >
-                    <Github className="size-4" />
+                    <GithubIcon className="size-4" />
                     Star on GitHub
                   </Link>
                 </div>

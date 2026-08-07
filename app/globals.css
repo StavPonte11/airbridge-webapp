@@ -26,6 +26,7 @@
 
   --color-cyan: var(--brand-cyan);
   --color-violet: var(--brand-violet);
+  --color-amber: var(--brand-amber);
   --color-glow: var(--brand-glow);
 
   --color-chart-1: var(--chart-1);
@@ -76,6 +77,7 @@
 
   --brand-cyan: oklch(0.82 0.14 205);
   --brand-violet: oklch(0.62 0.21 288);
+  --brand-amber: oklch(0.8 0.14 75);
   --brand-glow: oklch(0.78 0.15 220);
 
   --chart-1: oklch(0.82 0.14 205);
@@ -112,15 +114,16 @@
   }
 
   .gradient-text {
-    background: linear-gradient(
+    background-image: linear-gradient(
       100deg,
       oklch(0.97 0.005 260) 0%,
       var(--brand-cyan) 45%,
       var(--brand-violet) 100%
     );
-    -webkit-background-clip: text;
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
+    -webkit-text-fill-color: transparent;
   }
 
   .gradient-border {

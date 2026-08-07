@@ -2,7 +2,8 @@
 
 import Link from 'next/link'
 import { motion } from 'motion/react'
-import { Github, BookOpen, Play, ArrowRight } from 'lucide-react'
+import { BookOpen, Play, ArrowRight } from 'lucide-react'
+import { GithubIcon } from '@/components/ui/brand-icons'
 import { Aurora } from '@/components/ui/aurora'
 import { PipelineFlow } from '@/components/sections/pipeline-flow'
 
@@ -55,7 +56,7 @@ export function Hero() {
             href="https://github.com"
             className="group inline-flex items-center gap-2 rounded-xl bg-foreground px-5 py-3 text-sm font-medium text-background transition-transform hover:scale-[1.02]"
           >
-            <Github className="size-4" />
+            <GithubIcon className="size-4" />
             Star on GitHub
             <span className="ml-1 rounded-md bg-background/15 px-1.5 py-0.5 font-mono text-xs">
               14.2k
